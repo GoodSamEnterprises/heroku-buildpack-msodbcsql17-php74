@@ -23,7 +23,7 @@
         },
         "time": "2020-06-23 17:49:05",
         "type": "heroku-sys-php-extension",
-        "version": "5.8.1"
+        "version": "5.9.0"
       }
     ]
   ]
