@@ -3,5 +3,5 @@
 BUILD_DIR=$1
 mkdir -p "${BUILD_DIR}/.apt/usr/lib/odbc/conf/"
 echo "copying odbcinst.ini"
-cp hosted-public-files/1.1.0/odbcinst.ini "${BUILD_DIR}/.apt/usr/lib/odbc/conf/odbcinst.ini"
+cp odbcinst.ini "${BUILD_DIR}/.apt/usr/lib/odbc/conf/odbcinst.ini"
 echo "copied odbcinst.ini"
