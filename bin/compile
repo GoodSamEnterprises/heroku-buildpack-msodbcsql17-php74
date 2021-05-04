@@ -1,12 +1,6 @@
 #!/bin/sh
 
 BUILD_DIR=$1
-CACHE_DIR=$2
-ENV_DIR=$3
-
-ACCEPT_EULA=Y apt-get install msodbcsql17
-echo "Deleting /apt in Cache Dir:  ${CACHE_DIR}/apt"
-rm -rf $CACHE_DIR/apt
 mkdir -p "${BUILD_DIR}/.apt/usr/lib/odbc/conf/"
 echo "copying odbcinst.ini"
 cp odbcinst.ini "${BUILD_DIR}/.apt/usr/lib/odbc/conf/odbcinst.ini"
